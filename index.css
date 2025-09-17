@@ -4,9 +4,10 @@
     --muted: #475569;
     --line: #e5e7eb;
     --link: #16385a;
-    --bg: #ffffff;
-  }
-  
+    --bg: #cdfffd;
+}
+
+/* Mathces every element on the page */
 * { box-sizing: border-box; }
   
 /* Updating html and body not class */
