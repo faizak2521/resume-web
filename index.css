@@ -1,0 +1,114 @@
+:root {
+    --ink: #0f172a;
+    --muted: #475569;
+    --line: #e5e7eb;
+    --link: #16385a;
+    --bg: #ffffff;
+  }
+  
+  * { box-sizing: border-box; }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 16px/1.6 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  }
+  
+  .resume {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px 60px;
+  }
+  
+  .resume__header { margin-bottom: 18px; }
+  
+  .resume__name {
+    margin: 0 0 4px 0;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    font-size: clamp(28px, 4.5vw, 42px);
+    line-height: 1.1;
+  }
+  
+  .resume__meta {
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+  }
+  
+  .resume__meta a {
+    color: var(--link);
+    text-decoration: none;
+  }
+  
+  .resume__meta a:hover { text-decoration: underline; }
+  
+  .resume__section { margin-top: 26px; }
+  
+  .resume__h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 6px;
+  }
+  
+  .resume__h3 {
+    margin: 0 0 4px 0;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  
+  .resume__list {
+    margin: 8px 0 0 0;
+    padding-left: 18px;
+  }
+  
+  .resume__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px 20px;
+  }
+  
+  .resume__edu { display: grid; gap: 12px; }
+  .resume__edu-item { display: flex; justify-content: space-between; gap: 16px; }
+  .resume__edu-meta { white-space: nowrap; color: var(--muted); }
+  
+  .resume__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 8px 0 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .resume__tags li {
+    border: 1px solid var(--line);
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 14px;
+  }
+  
+  .resume__role { margin-top: 12px; }
+  .resume__role-head {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 8px 14px;
+    align-items: baseline;
+  }
+  
+  .resume__proj { margin-top: 12px; }
+  
+  /* Links inside content */
+  a { color: var(--link); }
+  a:hover { text-decoration: underline; }
+  
+  /* Print-friendly */
+  @media print {
+    .resume { margin: 0; padding: 0; }
+    a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 12px; color: var(--muted); }
+  }
