@@ -6,7 +6,7 @@
     --bg: #ffffff;
   }
   
-  * { box-sizing: border-box; }
+* { box-sizing: border-box; }
   
 .html, body {
     margin: 0;
@@ -25,7 +25,6 @@
 .resume__header { margin-bottom: 18px; }
   
 .resume__name {
-    text-align: center;
     /* margin: 0 0 4px 0; */
     font-weight: 800;
     letter-spacing: 0.5px;
