@@ -1,8 +1,12 @@
-# Author: Faiza Khan
-# Project Name: Assignment Portfolio Website
----
+# Assignment Portfolio Website
+
+**Author:** Faiza Khan
+
+## About the Project
+A minimal assignment portfolio to showcase completed coursework. It includes:
+- Typing animation built with CSS `@keyframes`
+- Scrollable assignments list
+- Clickable links to Azure-hosted pages
+
 ## Credits
-Use of *ChatGPT* was included for guidance, debugging, and text refinement.
----
-## About Project
-This project is a simple assignment portfolio website designed to showcase completed coursework. It features a minimalistic design with a typing animation, a scrollable assignments box for easy navigation, and clickable links to hosted websites on Azure.
+Use of ChatGPT for guidance, debugging, and text refinement.
